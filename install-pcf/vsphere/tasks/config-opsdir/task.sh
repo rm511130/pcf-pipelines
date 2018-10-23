@@ -172,6 +172,7 @@ director_config=$(cat <<-EOF
 {
   "ntp_servers_string": "$NTP_SERVERS",
   "resurrector_enabled": $ENABLE_VM_RESURRECTOR,
+  "post_deploy_enabled": "true",
   "max_threads": $MAX_THREADS,
   "database_type": "internal",
   "blobstore_type": "local",
