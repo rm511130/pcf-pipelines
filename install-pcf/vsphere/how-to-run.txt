@@ -1,5 +1,4 @@
 fly -t ci login -c http://concourse.pcf4u.com:8080 -k -u admin -p password
-admin / password 
  
 fly set-pipeline -t ci -c pipeline.yml -p install-vsphere -l params.yml 
 
