@@ -39,7 +39,7 @@ bosh_vm_folder: "pcf_vms"
 # Operators should verify that these are supported by any clients or downstream components that will initiate TLS handshakes with the Router/HAProxy.
 # The recommended settings are filled in below, change as necessary.
 haproxy_tls_ciphers: "DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384"
-router_tls_ciphers: "ECDHE-RSA-AES128-GCM-SHA256:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+router_tls_ciphers: "ECDHE-RSA-AES128-GCM-SHA256:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_BANANA"
 
 # Company Name for Apps Manager
 company_name:
