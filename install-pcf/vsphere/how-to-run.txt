@@ -1,5 +1,5 @@
 fly -t ci login -c http://concourse.pcf4u.com:8080 -k -u admin -p password
  
-fly set-pipeline -t ci -c pipeline.yml -p install-vsphere -l params.yml 
+fly set-pipeline -t ci -c pipeline.yml -p install-vsphere -l params.yml   # pick the appropriate params.yml file
 
 fly -t ci destroy-pipeline -p install-vsphere
