@@ -6,6 +6,15 @@ if [[ -n "$NO_PROXY" ]]; then
   echo "$OM_IP $OPSMAN_DOMAIN_OR_IP_ADDRESS" >> /etc/hosts
 fi
 
+echo "*********************************************"
+echo "*********************************************"
+echo "Checking on disk-space"
+df -h
+mount
+basename "$(cat /proc/1/cpuset)" 
+echo "*********************************************"
+echo "*********************************************"
+
 STEMCELL_VERSION=$(
   cat ./pivnet-product/metadata.json |
   jq --raw-output \
