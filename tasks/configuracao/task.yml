@@ -138,4 +138,4 @@ inputs:
   - name: pcf-pipelines
 
 run:
-  path: pcf-pipelines/tasks/config-ert/task_2_3.sh
+  path: pcf-pipelines/tasks/configuracao/task.sh
