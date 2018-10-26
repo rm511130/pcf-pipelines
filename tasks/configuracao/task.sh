@@ -3,7 +3,7 @@
 set -euo pipefail
 
 echo "**********************************************************"
-echo "in config-ert/task.sh and about to source generate_cert.sh"
+echo "in configuracao/task.sh and about to source generate_cert.sh"
 echo "**********************************************************"
 
 source pcf-pipelines/functions/generate_cert.sh
@@ -491,7 +491,7 @@ cf_network=$(
 
 
 echo "**************************************************************************"
-echo "in config-ert/task.sh and about to define the JOB_RESOURCE_CONFIG variable"
+echo "in configuracao/task.sh and about to define the JOB_RESOURCE_CONFIG variable"
 echo "**************************************************************************"
 
 
@@ -652,7 +652,7 @@ cf_resources=$(
 )
 
 echo "***********************************************************************************************"
-echo "in config-ert/task.sh and about to execute the om-linux command that will configure the product"
+echo "in configuracao/task.sh and about to execute the om-linux command that will configure the product"
 echo "the command that is about to be executed looks like this:"
 echo " "
 echo "om-linux --target https://"$OPSMAN_DOMAIN_OR_IP_ADDRESS "\\"
@@ -678,5 +678,5 @@ om-linux \
   --product-resources "$cf_resources"
   
 echo "*********************************************************************************************************"
-echo "in config-ert/task.sh and completed the execution of the om-linux command that will configure the product"
+echo "in configuracao/task.sh and completed the execution of the om-linux command that will configure the product"
 echo "*********************************************************************************************************"
