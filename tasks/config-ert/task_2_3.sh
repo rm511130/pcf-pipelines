@@ -490,9 +490,9 @@ cf_network=$(
 )
 
 
-echo "**************************************************************************"
-echo "in config-ert/task.sh and about to define the JOB_RESOURCE_CONFIG variable"
-echo "**************************************************************************"
+echo "******************************************************************************"
+echo "in config-ert/task_2_3.sh and about to define the JOB_RESOURCE_CONFIG variable"
+echo "******************************************************************************"
 
 
 JOB_RESOURCE_CONFIG="{
@@ -651,8 +651,8 @@ cf_resources=$(
     '
 )
 
-echo "***********************************************************************************************"
-echo "in config-ert/task.sh and about to execute the om-linux command that will configure the product"
+echo "***************************************************************************************************"
+echo "in config-ert/task_2_3.sh and about to execute the om-linux command that will configure the product"
 echo "the command that is about to be executed looks like this:"
 echo " "
 echo "om-linux --target https://"$OPSMAN_DOMAIN_OR_IP_ADDRESS "\\"
@@ -664,7 +664,7 @@ echo "--product-name cf \\"
 echo "--product-properties "$cf_properties" \\"
 echo "--product-network "$cf_network" \\"
 echo "--product-resources "$cf_resources
-echo "***********************************************************************************************"
+echo "***************************************************************************************************"
 
 om-linux \
   --target https://$OPSMAN_DOMAIN_OR_IP_ADDRESS \
@@ -677,6 +677,6 @@ om-linux \
   --product-network "$cf_network" \
   --product-resources "$cf_resources"
   
-echo "*********************************************************************************************************"
-echo "in config-ert/task.sh and completed the execution of the om-linux command that will configure the product"
-echo "*********************************************************************************************************"
+echo "*************************************************************************************************************"
+echo "in config-ert/task_2_3.sh and completed the execution of the om-linux command that will configure the product"
+echo "*************************************************************************************************************"
