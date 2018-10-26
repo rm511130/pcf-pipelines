@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-echo "**********************************************************"
-echo "in config-ert/task.sh and about to source generate_cert.sh"
-echo "**********************************************************"
+echo "**************************************************************"
+echo "in config-ert/task_2_3.sh and about to source generate_cert.sh"
+echo "**************************************************************"
 
 source pcf-pipelines/functions/generate_cert.sh
 
