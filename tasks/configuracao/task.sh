@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+
 echo "**********************************************************"
 echo "in configuracao/task.sh and about to source generate_cert.sh"
 echo "**********************************************************"
