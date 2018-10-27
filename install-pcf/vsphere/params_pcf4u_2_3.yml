@@ -47,8 +47,9 @@ company_name:
 # If set to a non-empty string, bypass DNS when uploading stemcells to Ops Manager
 company_proxy_domain:
 
-# c2c networking network cidr NOTE: we usually see 10.255.0.0/16 but I'm testing 10.254.0.0/16 for this installation
-container_networking_nw_cidr: 10.254.0.0/16
+# c2c networking network cidr NOTE: we usually see 10.255.0.0/16 but I'm testing 10.253.0.0/16 for this installation
+# I'm testing 10.253.0.0/16 becasue OURPCF has 10.255.0.0/16 and Concourse has 10.254.0.0/16
+container_networking_nw_cidr: 10.253.0.0/16
 
 # For credhub integration, Set the number of credhub instances in resource config to 2
 # Primary Encryption Name MUST match one of the encryption key names provided
@@ -66,7 +67,7 @@ default_quota_max_number_services: 500
 default_quota_memory_limit_mb: 20480
 
 # Deployment
-deployment_excluded_range: 10.0.0.0-10.0.11.0,10.0.11.255-10.0.255.255    # Deployment network exclusion range
+deployment_excluded_range: 10.0.0.0-10.0.30.0,10.0.30.255-10.0.255.255    # Deployment network exclusion range
 deployment_network_name: "DEPLOYMENT"
 deployment_nw_azs: PAS-Z1-RP,PAS-Z2-RP,PAS-Z3-RP            # Comma separated list of AZ’s to be associated with this network
 deployment_nw_cidr: 10.0.0.0/16           # Deployment network CIDR, ex: 10.0.0.0/22
