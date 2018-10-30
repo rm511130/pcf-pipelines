@@ -36,7 +36,9 @@ jobs:
     - get: pcf-pipelines
     - get: pivnet-opsman-product
       resource: pcf-ops-manager
-      params: {globs: ["*.ova"]}
+      params:  
+        globs:
+        - "*.ova"
 
   - task: deploy
     file: pcf-pipelines/install-pcf/vsphere/tasks/import-opsman/task.yml
@@ -170,7 +172,9 @@ jobs:
     - get: pcf-pipelines
     - get: pivnet-product
       resource: elastic-runtime
-      params: {globs: ["cf*.pivotal"]}
+      params: 
+        globs: 
+        - "cf*.pivotal"
     - get: pcf-ops-manager
       params: {globs: []}
       passed: [deploy-director]
@@ -199,7 +203,9 @@ jobs:
       trigger: true
     - get: pivnet-product
       resource: elastic-runtime
-      params: {globs: ["cf*.pivotal"]}
+      params: 
+        globs: 
+        - "cf*.pivotal"
       passed: [upload-ert]
 
   - task: stage
@@ -222,7 +228,9 @@ jobs:
       trigger: true
     - get: pivnet-product
       resource: elastic-runtime
-      params: {globs: ["cf*.pivotal"]}
+      params: 
+        globs: 
+        - "cf*.pivotal"
       passed: [stage-ert]
 
   - task: configure
