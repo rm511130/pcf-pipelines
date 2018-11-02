@@ -158,7 +158,7 @@ git_private_key: |-
 
 
 # Required if haproxy_forward_tls is enabled - HAProxy will use the CA provided to verify the certificates provided by the router.
-haproxy_backend_ca: 
+haproxy_backend_ca: disable
 
 # If enabled HAProxy will forward all requests to the router over TLS (enable|disable)
 haproxy_forward_tls: disable
