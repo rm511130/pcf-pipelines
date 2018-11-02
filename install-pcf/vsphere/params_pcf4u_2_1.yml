@@ -393,10 +393,10 @@ syslog_port:
 syslog_protocol:
 
 # Enable/disable TCP routing (enable|disable)
-tcp_routing: enable
+tcp_routing: disable
 
 # A comma-separated list of ports and hyphen-separated port ranges, e.g. 52135,34000-35000,23478
-tcp_routing_ports: 52135,34000-35000,23478
+tcp_routing_ports: 
 
 # Optional PEM-encoded certificates to add to BOSH director
 trusted_certificates:         # Trusted certificates to be deployed along with all VM’s provisioned by BOSH
